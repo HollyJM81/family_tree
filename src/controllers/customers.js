@@ -29,4 +29,22 @@ const readAllCustomers = async (_, res) => {
 	}
 };
 
-module.exports = { createCustomer, readAllCustomers };
+const readCustomerByID = async (_, res) => {
+	res.status(200).send(`Here's the customer you want`);
+};
+
+const updateCustomer = async (_, res) => {
+	res.status(200).send(`Customer updated`);
+};
+
+const deleteCustomer = async (req, res) => {
+	res.status(204);
+};
+
+module.exports = {
+	createCustomer,
+	readAllCustomers,
+	readCustomerByID,
+	updateCustomer,
+	deleteCustomer,
+};

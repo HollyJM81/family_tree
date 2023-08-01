@@ -1,0 +1,6 @@
+ALTER TABLE Address 
+RENAME COLUMN Line1 TO FlatNumber; 
+ALTER TABLE Address
+RENAME COLUMN Line2 TO StreetNumber;
+ALTER TABLE Address
+RENAME COLUMN Line3 TO City;
